@@ -16,12 +16,13 @@ function Facebook({ timeLimit }) {
   );
   
   const navigate = useNavigate();
+  const activeCotroller = localStorage.getItem("activeCotroller")
   useEffect(() => {
     setAccessTime();
     const interval = setInterval(() => {
       const timeLeft = getRemainingTime(timeLimit);
       setRemainingTime(timeLeft);
-      if ((timeLeft <= 0) ) {
+      if ((timeLeft <= 0) && activeCotroller) {
         clearInterval(interval);
         navigate("/");
       }
@@ -54,9 +55,9 @@ function Facebook({ timeLimit }) {
       </header>
       <main>
         <div class="container">
-          <div className="timeShow">
+         {localStorage.getItem("activeCotroller")?  <div className="timeShow">
           Time remaining: {formatTime(remainingTime)} minutes
-          </div>
+          </div> : ""}
           <div class="create-post">
             <textarea placeholder="What's on your mind?"></textarea>
             <button>Post</button>

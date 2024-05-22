@@ -8,7 +8,7 @@ import ProtectedRoute from './components/ProtectedRoute'
 import { AuthContext } from "./context/AuthConext";
 
 function RoutesController(){
-    const timeLimit =  40 * 1000;
+    const timeLimit =  20 * 1000;
    
     return(
         <Router>

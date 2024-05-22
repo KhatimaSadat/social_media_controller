@@ -52,13 +52,21 @@ height: 100%;
 {
   background-color: blue;
   color: white;
-}.App .leftSide .text {
+}
+.App .leftSide .text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80%;
+  height: 60%;
+  margin-bottom: 10%;
 
+}
+.App .leftSide .text .titleOfProject{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 .App .leftSide .text h1{
   font-size: 40px;

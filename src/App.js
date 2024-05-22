@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 function App() {
   const resfresh = ()=>{
     localStorage.removeItem("specificPageAccessTime");
+    localStorage.removeItem("activeCotroller");
     alert("refreshed successfully");
   }
   return (
@@ -14,8 +15,7 @@ function App() {
       <div className="leftSide">
         <div className="resfresh"><button onClick={resfresh}>Resfresh button</button></div>
         <div className="text">
-          <h1>Excessaive Use Of Social Media</h1>
-          <p>Most people use social media for long time and waste their time</p>
+          <div className="titleOfProject"><h1>Excessaive Use Of Social Media</h1></div>
           <Link to="/Select">Demo the solution</Link>
         </div>
       </div>

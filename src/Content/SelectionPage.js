@@ -9,16 +9,17 @@ import { Link } from "react-router-dom";
 import { useContext, useState } from "react";
 import { AuthContext } from "../context/AuthConext";
 function SelectionPage() {
-     const [isChecked, setIsChecked] = useState(false);
+     const [isChecked, setIsChecked] = useState(localStorage.getItem("activeCotroller"));
     //  const [activeButton , setActiveButton] = useContext(AuthContext);
   const handleCheckboxChange = (event) => {
 
     setIsChecked(event.target.checked);
     if(event.target.checked){
-     
+      localStorage.setItem("activeCotroller", true);
       setIsChecked(event.target.checked)
     }else{
-      
+      localStorage.removeItem("activeCotroller");
+      setIsChecked(event.target.checked);
     }
   };
   return (
