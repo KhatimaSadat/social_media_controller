@@ -1,12 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  background-color: #DEF2F1;
+}
+
+.App .rightSide{
+width: 40%;
+height: 100%;
+}
+.App .rightSide img{
+  width: 100%;
+  height: 100%;
+}
+.App .leftSide{
+  width: 60%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.App .leftSide .resfresh{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  height: 20%;
+  width: 80%;
+}
+.App .leftSide .resfresh button{
+  padding: 10px;
+  color: blue;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition-duration: 1s;
+  transition-property: all;
+}
+.App .leftSide .resfresh button:hover
+{
+  background-color: blue;
+  color: white;
+}.App .leftSide .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+
+}
+.App .leftSide .text h1{
+  font-size: 40px;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+.App .leftSide .text a{
+  margin-top: 5px ;
+ padding: 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration:none ;
+}
+.App .leftSide a:hover{
+  background-color: white;
+  color: blue;
+  cursor: pointer;
 
+}
+
+/* .App .leftSide button a{
+  text-decoration: none;
+  color: ;
+} */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

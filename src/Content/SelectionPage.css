@@ -1,0 +1,69 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+   
+
+}
+.body #active{
+    display: flex;
+    flex-direction: row ;
+    justify-content: end;
+    align-items: center;
+    /* width: 70%; */
+    /* height: 10%; */
+}
+.selectedPage_container {
+    text-align: center;
+    height: 50%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #666;
+}
+
+.app-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 50px;
+}
+
+.app-icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.app-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    image-rendering: crisp-edges;
+}
+
+.notification {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 50%;
+    font-size: 0.8em;
+}

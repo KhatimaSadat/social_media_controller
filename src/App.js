@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import bg from "./Assets/shutterstock_1456780712.jpg";
+import { Link } from "react-router-dom";
 function App() {
+  const resfresh = ()=>{
+    localStorage.removeItem("specificPageAccessTime");
+    alert("refreshed successfully");
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="rightSide">
+        <img src={bg} alt="BackGround" />
+      </div>
+      <div className="leftSide">
+        <div className="resfresh"><button onClick={resfresh}>Resfresh button</button></div>
+        <div className="text">
+          <h1>Excessaive Use Of Social Media</h1>
+          <p>Most people use social media for long time and waste their time</p>
+          <Link to="/Select">Demo the solution</Link>
+        </div>
+      </div>
     </div>
   );
 }

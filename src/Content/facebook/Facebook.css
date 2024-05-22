@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.faceBook-body {
+    background-color: #f0f2f5;
+    color: #1c1e21;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    
+    
+}
+
+header {
+    background-color: #4267b2;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8em;
+}
+
+main {
+    margin: 20px 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.container .timeShow{
+    /* background-color: white;
+    padding: 10px; */
+    color: red;
+}
+.create-post , .container .timeShow {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.create-post textarea {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.create-post button {
+    background-color: #4267b2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-post button:hover {
+    background-color: #365899;
+}
+
+.posts .post {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.posts .post .getIdea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;}
+    .posts .post .getIdea .item{
+        width: 30%;
+    }
+    .posts .post .getIdea .item img{
+        width: 45%;
+        height: 25px;
+    }
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-header h2 {
+    margin: 0;
+    font-size: 1em;
+}
+
+.post-header time {
+    display: block;
+    font-size: 0.8em;
+    color: #65676b;
+}
